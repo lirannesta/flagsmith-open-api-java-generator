@@ -3,10 +3,12 @@ This project uses `SpringBoot` and OpenAPI Maven `openapi-generator-maven-plugin
 
 # Getting Started
 Inside pom.xml file, under openapi-generator-maven-plugin attributes, set the desired packages for API and model of the generated code.
+Put the resource openAPI schema under /sec/main/resources/flagsmith.json (referenced already via the pom.xml file).  
 After cloning, run Maven clean + install.
-During Maven test phase, *FlagsmithOpenapiApplicationTests* will run , and load SpringBoot context. you can use these tests.
-One might also startup a SpringBoot Application using the already given *FlagsmithOpenapiApplication* class.
 The generated code will reside under /target/classes directory.
+During Maven test phase, *FlagsmithOpenapiApplicationTests* will run , and load SpringBoot context. you can use these tests.  
+One might also startup a SpringBoot Application using the already given *FlagsmithOpenapiApplication* class.  
+  
 
 ### Reference Documentation
 
